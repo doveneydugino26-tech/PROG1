@@ -22,4 +22,4 @@ void tryToDouble(int num){
 //What to explain in your submission://
 
 //Why does the caller's variable stay unchanged even though the function clearly doubles something?//
-/* because the doubled value of num was assigned as the value of the function itself not the num variable, that is why when you call the assigned value of num it will still be 7 unless you call the function.*/
+/*The caller's variable stays unchanged because C uses pass-by-value. When tryToDouble(num) is called, C passes a copy of the variable's value (7), not the variable itself. The function modifies its own local copy, leaving the original num in main unaffected. Because the function returns void, no value is sent back to main.*/
