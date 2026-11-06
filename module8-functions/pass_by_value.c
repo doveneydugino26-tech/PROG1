@@ -19,3 +19,6 @@ void tryToDouble(int num){
     num = num * 2;
     printf("Inside tryToDouble, doubled value = %d\n", num);
 }
+//What to explain in your submission://
+
+//Why does the caller's variable stay unchanged even though the function clearly doubles something?//
